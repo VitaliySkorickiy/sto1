@@ -390,34 +390,51 @@ header {
 
 // ==============   profi  ========
 
+.profi {
+    background-color: #000;
+}
 
 .profi__wrapper {
-    margin: 60px 0px;
+    background-image: url(../img/bg/profiBG.jpg);
+    opacity: .9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
 
     .services__wrapper-title {
+        margin: 0;
+
         span {
             background-image: url(../img/title3.png);
         }
     }
 }
 
-.profi__slider {
+.profi__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.profi__slider-inem {
+.profi__item {
     width: 590px;
     height: 300px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin: 20px;
     transition: all 1s;
+
+
+    
+
+
 
     &:hover {
         transform: scale(1.2);
-        box-shadow: 2px 2px 4px rgb(168, 168, 168);
+        box-shadow: 0px 0px 3px 5px #ffc61a;
 
     }
 }
@@ -437,6 +454,7 @@ header {
     padding: 10px;
     width: 500px;
     background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
 }
 
 .text__name {
@@ -650,11 +668,11 @@ header {
 
 // ==  map  =============
 
-.map{
+.map {
     position: relative;
 }
 
-.contacts__map{
+.contacts__map {
     border: 3px solid #ffc61a;
     text-align: center;
     position: absolute;
@@ -664,17 +682,21 @@ header {
     height: 200px;
     width: 300px;
     padding: 10px;
-    p{
+
+    p {
         font-size: 20px;
     }
-    span{
+
+    span {
         font-weight: 700;
         line-height: 40px;
     }
-    a{
+
+    a {
         font-size: 20px;
         color: #000;
-        &:hover{
+
+        &:hover {
             color: #ffc61a;
         }
     }
@@ -693,9 +715,9 @@ header {
 //    scroll  ==========
 
 #topNubex {
-	position: fixed;
-	right: 45px;
-	bottom: 45px;
-   }
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+}
 
 //    scroll  ==========
