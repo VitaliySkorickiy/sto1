@@ -18,25 +18,57 @@ $(function () {
   });
 
 
+  $('.models__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
 
-
-
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows : true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
   });
+
+
+
+  $('.comments__inner').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button class="slick-arrow slick-prev"></button>',
+    nextArrow: '<button class="slick-arrow slick-next"></button>',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+
+  });
+
+
+
+
+
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $('#topNubex').fadeIn();
+    } else {
+      $('#topNubex').fadeOut();
+    }
+  });
+  $('#topNubex').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 700);
+  });
+
+
+
+
+
+
 
 
 });
