@@ -428,7 +428,7 @@ header {
     transition: all 1s;
 
 
-    
+
 
 
 
@@ -471,6 +471,93 @@ header {
 .text__content {
     padding-top: 20px;
 }
+
+
+//  form =============
+
+
+
+.form {
+    background-color: #ffc61a;
+    padding: 60px 0px;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__content {
+    width: 40%;
+
+    p {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0px 0px 30px 0px;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+
+.form__form {
+    width: 40%;
+    padding: 20px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 8px;
+
+    input {
+        display: block;
+        border-radius: 8px;
+        padding: 10px;
+        outline: none;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .form-button {
+        margin-bottom: 10px;
+        background-color: rgb(238, 224, 26);
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .date{
+        text-align: center;
+        opacity: .5;
+        a{
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}
+
+.form__line {
+    padding-top: 15px;
+}
+
+.form__title{
+
+    p{
+        margin: 0px 0px 20px 0px;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    span{
+        font-size: 20px;
+    }
+    
+
+}
+
+
+
+
 
 
 
@@ -628,43 +715,6 @@ header {
 }
 
 
-//  footer   ================
-
-.footer {
-    background-color: #000;
-    color: #fff;
-}
-
-.footer__inner {
-    padding: 30px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.footer__logo {
-    text-align: center;
-    max-width: 250px;
-
-    a {
-        width: 100%;
-
-        img {
-            height: 100px;
-        }
-
-    }
-}
-
-.footer__social {
-    max-width: 330px;
-
-    a {
-        margin: 5px;
-    }
-}
-
 
 // ==  map  =============
 
@@ -706,9 +756,46 @@ header {
 
 
 
+//  footer   ================
+
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer__inner {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.footer__logo {
+    text-align: center;
+    max-width: 250px;
 
+    a {
+        width: 100%;
+
+        img {
+            height: 100px;
+        }
+
+    }
+}
+
+.footer__social {
+    max-width: 330px;
+
+    li{
+        display: inline-block;
+    }
+
+    a {
+        margin: 5px;
+    }
+}
 
 
 
@@ -721,3 +808,4 @@ header {
 }
 
 //    scroll  ==========
+
