@@ -12,6 +12,7 @@ html {
     border-spacing: inherit;
 }
 
+
 header {
     height: 190px;
     background-color: #000;
@@ -216,6 +217,7 @@ header {
         background-size: cover;
         text-shadow: 2px 2px 0px rgb(168, 168, 168);
         position: relative;
+        padding: 0px 30px;
 
         &::after {
             content: '///';
@@ -233,7 +235,7 @@ header {
             color: #000;
             height: 8px;
             width: 140px;
-            right: -120px;
+            right: -150px;
             top: 0;
         }
     }
@@ -343,6 +345,7 @@ header {
 
 .advantages__wrapper {
     padding-top: 60px;
+
 }
 
 .advantages__inner {
@@ -426,11 +429,6 @@ header {
     justify-content: space-between;
     margin: 20px;
     transition: all 1s;
-
-
-
-
-
 
     &:hover {
         transform: scale(1.2);
@@ -527,10 +525,12 @@ header {
         font-size: 20px;
         font-weight: 700;
     }
-    .date{
+
+    .date {
         text-align: center;
         opacity: .5;
-        a{
+
+        a {
             color: #000;
             text-decoration: underline;
         }
@@ -541,24 +541,20 @@ header {
     padding-top: 15px;
 }
 
-.form__title{
+.form__title {
 
-    p{
+    p {
         margin: 0px 0px 20px 0px;
         text-transform: uppercase;
         font-size: 25px;
     }
-    span{
+
+    span {
         font-size: 20px;
     }
-    
+
 
 }
-
-
-
-
-
 
 
 // ===========   comments    ================
@@ -577,6 +573,7 @@ header {
     .services__wrapper-title {
         span {
             text-shadow: 3px 3px 0px #ffc61a;
+            background-image: url(../img/title.png);
         }
     }
 
@@ -755,10 +752,10 @@ header {
 
 
 
-
 //  footer   ================
 
 .footer {
+
     background-color: #000;
     color: #fff;
 }
@@ -788,7 +785,7 @@ header {
 .footer__social {
     max-width: 330px;
 
-    li{
+    li {
         display: inline-block;
     }
 
@@ -809,3 +806,85 @@ header {
 
 //    scroll  ==========
 
+
+
+// ===== ABOUT ==============
+
+.about__wrapper {
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+    .services__wrapper-title {
+        span {
+            background-image: url(../img/title3.png);
+            font-size: 35px;
+        }
+
+    }
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    .about__inner-text{
+        max-width: 60%;
+        padding: 15px;
+    }
+
+    .about__inner-photo {
+        background-image: url(../img/about/about2.jpg);
+        width: 40%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 15px 15px 30px 15px;
+
+        img {
+        }
+    }
+}
+
+// ====== CONTACT  =============
+
+
+.contact{
+
+    .container{
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contacts__maps{
+            font-size: 25px;
+            line-height: 40px;
+            max-width: 350px;
+            background-color: rgb(228, 228, 228);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+        }
+    }
+
+}
+
+// ===  404  ========================
+
+
+.page404-img{
+    background-image: url(../img/bg/bg404.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 4s ease-in-out;
+    &:hover{
+        transform: rotateY(360deg);
+    }
+}
+
+
+// === megia   =======================
+
+@import 'media';
