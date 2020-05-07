@@ -26,9 +26,39 @@ $(function () {
     autoplaySpeed: 2000,
     prevArrow: false,
     nextArrow: false,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
-
+    responsive: [{
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
 
@@ -37,13 +67,20 @@ $(function () {
     dots: false,
     infinite: true,
     speed: 1000,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     prevArrow: '<button class="slick-arrow slick-prev"></button>',
     nextArrow: '<button class="slick-arrow slick-next"></button>',
     slidesToShow: 2,
     slidesToScroll: 1,
-
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
 
@@ -66,6 +103,10 @@ $(function () {
 
 
 
+  $('.burger').on('click', function () {
+    $('.header__menu ul').slideToggle();
+
+  });
 
 
 
