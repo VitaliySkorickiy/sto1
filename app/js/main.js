@@ -73,14 +73,12 @@ $(function () {
     nextArrow: '<button class="slick-arrow slick-next"></button>',
     slidesToShow: 2,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-        }
+    responsive: [{
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
       }
-    ]
+    }]
   });
 
 
@@ -107,6 +105,11 @@ $(function () {
     $('.header__menu ul').slideToggle();
 
   });
+
+
+  
+
+
 
 
 
