@@ -13,7 +13,6 @@ body {
     height: 100%;
     position: relative;
     font-family: 'Lato', sans-serif;
-    // overflow-x: hidden;
 }
 
 // ==========================================
@@ -51,7 +50,8 @@ button {
 }
 
 ul,
-li {
+li,
+p {
     margin: 0;
     padding: 0;
     list-style: none;

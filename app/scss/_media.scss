@@ -1,3 +1,13 @@
+@media (max-width:1500px) {
+  .profi__item {
+    max-width: 46%;
+  }
+
+
+
+
+}
+
 @media (max-width:1200px) {
 
   .slogan {
@@ -29,6 +39,15 @@
   }
 }
 
+// =======================================  1020  ==================
+@media (max-width:1020px) {
+  .services__wrapper-item {
+    min-width: 32%;
+    height: 0;
+    padding-bottom: 32%;
+  }
+}
+
 // =======================================  1000  ==================
 
 
@@ -55,18 +74,6 @@
       width: 100%;
     }
 
-    .slider__item-title {
-      max-width: 500px;
-      left: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-
-      span {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 30px;
-        line-height: 60px;
-
-      }
-    }
   }
 
   .about__inner {
@@ -101,18 +108,9 @@
 // ====================  900  ==================
 
 
-@media (max-width:900px) {
+@media (max-width:900px) {}
 
-  .services__wrapper-title {
-    font-size: 25px;
-    margin-bottom: 30px;
-  }
 
-  .services__wrapper-item {
-    max-width: 100%;
-  }
-
-}
 
 
 // ====================  850  ==================
@@ -140,6 +138,10 @@
     padding: 30px 0px;
   }
 
+  .profi__item {
+    max-width: 80%;
+  }
+
   .form__wrapper {
     flex-direction: column;
     text-align: center;
@@ -156,6 +158,19 @@
 
   .contacts__map {
     display: none;
+  }
+
+  .services__wrapper-title {
+
+    span {
+
+      &::after,
+      &::before {
+        content: '';
+        display: none;
+      }
+
+    }
   }
 
 }
@@ -182,6 +197,15 @@
     width: 100%;
   }
 
+}
+
+// =======================================  770  ==================
+@media (max-width:770px) {
+  .services__wrapper-item {
+    min-width: 48%;
+    height: 0;
+    padding-bottom: 48%;
+  }
 }
 
 
@@ -224,13 +248,34 @@
     border-bottom: 3px solid #000;
   }
 
+  .slider__item-title {
+
+    span {
+      font-size: calc(18px + (52 + 52 * 0.7) * ((100vw - 320px) / 1200));
+    }
+  }
+
+  .services__wrapper-title {
+    span{
+      font-size: calc(16px + (18 + 18 * 0.7) * ((100vw - 320px) / 1200));
+    }
+    
+    margin-bottom: 30px;
+  }
+
   .footer__inner {
     justify-content: space-around;
   }
 
-
   .services__wrapper {
     padding: 30px 0px;
+  }
+
+  .services__wrapper-item {
+
+    .text {
+      font-size: calc(18px + (5 + 5 * 0.7) * ((100vw - 320px) / 1200));
+    }
   }
 
   .contact {
@@ -252,22 +297,9 @@
 @media (max-width:600px) {
 
   .profi__item {
-    flex-direction: column;
-    align-items: center;
-    height: 500px;
-
-    .profi__slider-text {
-      max-width: 500px;
-    }
-
-    .profi__slider-ava {
-      overflow: hidden;
-
-      img {
-        max-width: 500px;
-      }
-    }
+    max-width: 90%;
   }
+
 
   .about__wrapper {
     .services__wrapper-title {
@@ -313,34 +345,6 @@
       height: 300px;
       width: 100%;
     }
-
-    .slider__item-title {
-      max-width: 400px;
-      left: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-
-      span {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 25px;
-        line-height: 30px;
-
-      }
-    }
-
-  }
-
-  .services__wrapper-title {
-    font-size: 20px;
-
-    span {
-
-      &::after,
-      &::before {
-        content: '';
-        display: none;
-      }
-
-    }
   }
 
   .button {
@@ -355,8 +359,29 @@
   .about__inner-text {
     font-size: 16px;
   }
+  .advantages__wrapper{
+    padding-top: 30px;
+  }
+  .profi__wrapper{
+    padding-top: 30px;
+  }
+  .profi__inner{
+    padding: 30px 0px;
+  }
+  .advantages{
+    padding-bottom: 30px;
+  }
+
 }
 
+// =======================================  520  ==================
+@media (max-width:520px) {
+  .services__wrapper-item {
+    min-width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+  }
+}
 
 // ====================  500  ==================
 
@@ -364,35 +389,30 @@
 
   .profi__item {
     flex-direction: column;
-    align-items: center;
-    height: 500px;
+    min-width: 90%;
+    max-height: 500px;
+    height: 100%;
+
 
     .profi__slider-text {
       max-width: 100%;
     }
 
     .profi__slider-ava {
-      overflow: hidden;
-
-      img {
-        max-width: 100%;
-        // top:0;
-        // left:0; 
-
-      }
+      width: 100%;
+      height: 350px;
     }
   }
+
+
 
   .about__wrapper {
     .services__wrapper-title {
       span {
         font-size: 20px;
       }
-
     }
   }
-
-
 }
 
 
@@ -426,19 +446,6 @@
       height: 300px;
       width: 100%;
     }
-
-    .slider__item-title {
-      max-width: 300px;
-      left: 5px;
-      background-color: rgba(0, 0, 0, 0.7);
-
-      span {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 18px;
-
-      }
-    }
-
   }
 }
 
