@@ -256,10 +256,10 @@
   }
 
   .services__wrapper-title {
-    span{
+    span {
       font-size: calc(16px + (18 + 18 * 0.7) * ((100vw - 320px) / 1200));
     }
-    
+
     margin-bottom: 30px;
   }
 
@@ -359,16 +359,20 @@
   .about__inner-text {
     font-size: 16px;
   }
-  .advantages__wrapper{
+
+  .advantages__wrapper {
     padding-top: 30px;
   }
-  .profi__wrapper{
+
+  .profi__wrapper {
     padding-top: 30px;
   }
-  .profi__inner{
+
+  .profi__inner {
     padding: 30px 0px;
   }
-  .advantages{
+
+  .advantages {
     padding-bottom: 30px;
   }
 
@@ -440,13 +444,12 @@
 
 @media (max-width:400px) {
 
-  .slider__item {
-    &-img {
-      overflow: hidden;
-      height: 300px;
-      width: 100%;
-    }
+
+  .models__slider-item {
+    padding-bottom: 3%;
+    background-size: cover;
   }
+
 }
 
 

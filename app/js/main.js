@@ -8,7 +8,7 @@ $(function () {
     infinite: true,
     speed: 2000,
     fade: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 3000,
     prevArrow: false,
     nextArrow: false,
