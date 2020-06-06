@@ -51,9 +51,19 @@ button {
 
 ul,
 li,
-p {
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-size: inherit;
+    font-weight: 400;
     list-style: none;
 }
 
@@ -90,17 +100,22 @@ p {
                     color: #b0bec5;
                 }
             }
-            &:last-child{
-                a, span{
+
+            &:last-child {
+
+                a,
+                span {
                     color: #000;
                 }
             }
-            a{
+
+            a {
                 color: #b0bec5;
             }
         }
     }
 }
+
 // ==    хлебные крошки  =============
 
 // ==========================================
