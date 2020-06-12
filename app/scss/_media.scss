@@ -162,7 +162,7 @@
 
   .services__wrapper-title {
 
-    span {
+    h4,p {
 
       &::after,
       &::before {
@@ -256,7 +256,7 @@
   }
 
   .services__wrapper-title {
-    span {
+    h4 {
       font-size: calc(16px + (18 + 18 * 0.7) * ((100vw - 320px) / 1200));
     }
 
@@ -305,7 +305,7 @@
     .services__wrapper-title {
       margin-bottom: 10px;
 
-      span {
+      h4 {
         font-size: 30px;
       }
     }
@@ -412,7 +412,7 @@
 
   .about__wrapper {
     .services__wrapper-title {
-      span {
+      h4 {
         font-size: 20px;
       }
     }
@@ -430,10 +430,13 @@
   .services__wrapper-title {
     font-size: 18px;
     line-height: 25px;
+
+
+    
   }
 
   .form__content {
-    p {
+    h4 {
       font-size: 30px;
     }
   }
@@ -449,6 +452,15 @@
     padding-bottom: 3%;
     background-size: cover;
   }
+
+
+  // .services__wrapper-title {
+
+  //   h4,p {
+  //     padding: 0 40px;
+
+  //   }
+  // }
 
 }
 
